@@ -26,12 +26,14 @@ value_1, value_2
 
 Файл следует создавать с помощью модуля tempfile.
 
+```python
 import os
 import tempfile
 
 storage_path = os.path.join(tempfile.gettempdir(), 'storage.data')
 with open(storage_path, 'w') as f:
   ...
+```
 
 Пример работы:
 
