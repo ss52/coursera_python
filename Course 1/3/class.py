@@ -68,7 +68,7 @@ def get_car_list(csv_filename):
 
                     filename, file_extension = os.path.splitext(photo_file_name)
                     right_file = file_extension in FILE_EXT
-                    
+
                     if len(brand) > 0 and len(photo_file_name) > 0 and right_file:
                         passenger_seats_count = int(item[2])
                         carrying = float(item[5])
