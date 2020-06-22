@@ -16,9 +16,9 @@ class OpenWeatherForecast:
 
 
 class CityInfo:
-    def __init__(self, city):
+    def __init__(self, city, weather_source=None):
         self.city = city
-        self._OWF = OpenWeatherForecast()
+        self._OWF = weather_source or OpenWeatherForecast()
 
     def weather_forecast(self):
         forecast = self._OWF.get(self.city)
