@@ -1,6 +1,6 @@
 import requests
 import pprint
-from dateutil.parser import parse
+# from dateutil.parser import parse
 
 
 API_KEY = '27387f3bcd9017aa04ecae71a6e8c45e'
